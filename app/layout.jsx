@@ -15,7 +15,11 @@ library.add(fab);
 const Navbar = () => (
   <nav className="navbar p-5 bg-black flex items-center justify-between">
     {/* Add your navbar content here */}
-    <img src="path/to/your/logo.png" alt="Logo" className="h-8" />
+    <img src="/assets/logo.jpeg" alt="Logo" 
+          className=""
+          width={80}
+          height={80}
+         />
     <ul className="flex text-white gap-10 cursor-pointer">
       <li>
         <Link href="/">
@@ -61,14 +65,14 @@ const Footer = () => (
 
     <div className="flex items-center justify-between">
       {/* Logo on the left */}
-      <img src="path/to/your/logo.png" alt="Logo" className="h-8" />
+      <img src="/assets/logo.jpeg" alt="Logo" className="h-20" />
 
       {/* Follow Us in the center */}
       <div className="text-center ml-50">
         Follow Us:
         <ul className="flex gap-2 bg-white">
           <li>
-            <a href="https://www.facebook.com">
+            <a href="https://www.facebook.com" >
               <FontAwesomeIcon icon={["fab", "facebook-square"]} />
             </a>
           </li>
