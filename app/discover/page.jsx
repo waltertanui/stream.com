@@ -48,7 +48,7 @@ function discover() {
     <div className=" mb-20 px-10 flex flex-col md:flex-row">
   <div className=" w-full md:w-1/2">
     <Image
-      src="/assets/frame 6.png"
+      src="/assets/Frame 6.png"
       alt="Image"
       className="rounded-sm w-full md:h-full object-cover"
       width={350}
@@ -72,7 +72,7 @@ function discover() {
     {/*section 4 */}
     <div className='text-white text-center'>
       <h1 className="text-3xl mb-4">Our Vision</h1>
-      <p className="text-center text-gray-500 px-4 mx-40">
+      <p className="text-center text-gray-500 px-4 mx-10">
       Stream is a platform that empowers creators and 
       audiences to connect and experience the world of 
       audio and video content in new and exciting ways. 
@@ -80,7 +80,7 @@ function discover() {
       and share your own creativity with the world.
       </p>
       <h1 className="text-3xl mt-8 mb-4">Our Mission</h1>
-      <p className="text-center text-gray-500 px-4 mx-40 ">
+      <p className=" text-center text-gray-500 px-4 mx-10 ">
       Stream is the ultimate platform for audio and video
        streaming, with a vast library of content and 
        cutting-edge technology. We're committed to providing
