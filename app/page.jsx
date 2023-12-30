@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function page() {
   return (
-    <div className="bg-[#020405] mr-10 block overflow-y-auto w-full ">
+    <div className="bg-black mr-10 block overflow-y-auto w-full ">
       {/*section 1 */}
      <div class="flex flex-col md:flex-row w-full mb-20 px-4">
       <div class="mb-10 md:w-1/2 md:mr-10">

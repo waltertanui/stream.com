@@ -4,17 +4,11 @@ import Image from "next/image";
 
 function discover() {
   return (
-    <div className='bg-[#040708]'>
+    <div className='bg-black'>
         <div className=''>
           <h1 className='text-white text-3xl text-center'>Who Are We</h1>
             <p className='text-gray-600 text-center mt-6 px-10'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing 
-              elit. Sed do eiusmod tempor incididunt ut labore et 
-              dolore magna aliqua. Ut enim ad minim veniam, quis 
-              nostrud exercitation ullamco laboris nisi ut aliquip 
-              ex ea commodo consequat. Duis aute irure dolor in 
-              reprehenderit in voluptate velit esse cillum dolore eu 
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            Stream, Connect, and Empower: Your Sound RevolutionDiscover the future of music streaming with HarmonyWaveJoin the decentralized digital movement today
             </p>
         </div>
         <div className='flex h-40 gap-4 mt-10 justify-center mx-48'>

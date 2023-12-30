@@ -5,7 +5,7 @@ import Image from "next/image";
 function product() {
   return (
     //section 1
-  <div className="bg-[#06090a] mr-10 flex-1 overflow-y-auto w-full ">
+  <div className="bg-black mr-10 flex-1 overflow-y-auto w-full ">
     <div class="flex flex-col mb-20 md:flex-row">
       <div class="w-full md:w-1/2 mb-4 md:mb-0 ml-10">
         <h1 class="head_text mb-5">Discover Web 3 Music Innovation</h1>
