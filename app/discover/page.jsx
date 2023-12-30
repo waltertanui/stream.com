@@ -18,10 +18,10 @@ function discover() {
             </p>
         </div>
         <div className='flex h-40 gap-4 mt-10 justify-center mx-48'>
-    <img className='w-full sm:w-1/2 lg:w-1/4' src='/assets/logo.jpg' alt='description'/>
-    <img className='w-full sm:w-1/2 lg:w-1/4' src='/assets/logo.jpg' alt='description'/>
-    <img className='w-full sm:w-1/2 lg:w-1/4' src='/assets/logo.jpg' alt='description'/>
-    <img className='w-full sm:w-1/2 lg:w-1/4' src='/assets/logo.jpg' alt='description'/>
+    <img className='w-full sm:w-1/2 lg:w-1/4' src='/assets/Rectangle 6.png' alt='description'/>
+    <img className='w-full sm:w-1/2 lg:w-1/4' src='/assets/Rectangle 7.png' alt='description'/>
+    <img className='w-full sm:w-1/2 lg:w-1/4' src='/assets/Rectangle 8.png' alt='description'/>
+    <img className='w-full sm:w-1/2 lg:w-1/4' src='/assets/Rectangle 9.png' alt='description'/>
 </div>
 
 
@@ -41,7 +41,7 @@ function discover() {
         </div>
       <div class="w-full md:w-1/2 mt-6 md:mt-0">
       <Image
-          src="/assets/logo.jpg"
+          src="/assets/Frame 8.png"
           alt="Image"
           class=" rounded-sm w-full"
           width={250}
@@ -54,7 +54,7 @@ function discover() {
     <div className=" mb-20 px-10 flex flex-col md:flex-row">
   <div className=" w-full md:w-1/2">
     <Image
-      src="/assets/logo.jpg"
+      src="/assets/frame 6.png"
       alt="Image"
       className="rounded-sm w-full md:h-full object-cover"
       width={350}
@@ -100,7 +100,7 @@ function discover() {
       <div class="flex flex-col md:flex-row mb-20 px-4 mt-20">
       <div class="w-full md:w-1/2">
         <Image
-          src="/assets/logo.jpg"
+          src="/assets/Frame 5(2).png"
           alt="Image"
           class="rounded-sm w-full"
           width={350}
@@ -147,29 +147,25 @@ function discover() {
     <h1 className='text-3xl text-white mb-5'>Our Values</h1>
     <h3 className='text-gray-500 '>Value 1</h3>
     <p className='text-gray-500 md:mr-28'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat.
+    Explore a world of entertainment possibilities: Stream's vast library of content has something for everyone, from comedy and music to podcasts and documentaries.
+Discover new voices and perspectives: Stream empowers creators from all walks of life to share their stories, giving you access to a diverse range of perspectives.
       <hr className="border-gray-500 mt-2" />
     </p>
     <h3 className='text-gray-500 mt-4'>Value 2</h3>
     <p className='text-gray-500 md:mr-28'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat.
+    Fuel your curiosity and creativity: Stream's personalized recommendations and curated playlists help you discover new artists, genres, and ideas that you're sure to love.
+Connect with others who share your interests: Stream's community features make it easy to connect with other users who share your interests, so you can discover new content and have meaningful conversations.
       <hr className="border-gray-500 mt-2" />
     </p>
     <h3 className='text-gray-500 mt-4'>Value 3</h3>
     <p className='text-gray-500 md:mr-28'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat.
+    Enjoy a seamless entertainment experience: Stream's intuitive interface and cutting-edge technology make it easy to find and enjoy your favorite content, wherever you are.
       <hr className="border-gray-500 mt-2" />
     </p>
   </div>
   <div className='md:h-50 w-full md:w-1/2 md:ml-10'>
     <Image
-      src="/assets/logo.jpg"
+      src="/assets/Frame 7.png"
       alt="Image"
       className="right-img rounded-sm w-full"
       width={350}
