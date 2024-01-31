@@ -5,6 +5,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './globals.css'; // Your global styles
 import Link from 'next/link';
+//import firebase from "./firebase"
+//import 'firebase/firestore'; // if you're using Firestore
 
 
 
@@ -93,13 +95,9 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-
-      {/* Copyright on the right */}
-      <div>&copy; Copyrights reserved to stream.com.</div>
-    </div>
-  </footer>
-);
-
+      </div>
+      </footer>
+      )
 const RootLayout = ({ children }) => (
   <html lang="en">
     <body className="w-full">

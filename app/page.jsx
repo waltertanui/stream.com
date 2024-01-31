@@ -1,6 +1,7 @@
 import React from 'react'
 import "./globals.css"
 import Image from "next/image";
+import home1 from "../public/assets/home1.jpeg"
 
 
 function page() {
@@ -34,14 +35,14 @@ function page() {
     <div class="flex flex-col-reverse md:flex-row mb-20 px-4">
       <div class="w-full md:w-1/2">
         <Image
-          src="/assets/Frame 2.png"
+          src="/assets/home1.jpeg"
           alt="Image"
           class="right-img rounded-sm w-full"
           width={250}
           height={250}
         />
       </div>
-      <div class="w-full md:w-1/2 text-white">
+      <div class="w-full md:w-1/2 text-white text-center mt-8">
         <h3>Explore Stream</h3>
         <h1 class="desc">STREAM: Your One-Stop Shop for all Things Entertainment</h1>
         <p class="text-gray-600 md:mr-28">
@@ -62,7 +63,7 @@ function page() {
          </div>
          <div class="w-full md:w-1/2 mt-6">
          <Image
-          src="/assets/Frame 3.png"
+          src="/assets/home2.jpeg"
           alt="Image"
           class="right-img rounded-sm w-full"
           width={250}
@@ -77,14 +78,14 @@ function page() {
       <div class="flex flex-col-reverse md:flex-row mb-20 px-4">
         <div class="w-full md:w-1/2">
         <Image
-          src="/assets/Frame 4.png"
+          src="/assets/home3.jpeg"
           alt="Image"
           class="right-img rounded-sm w-full"
           width={250}
           height={250}
         />
         </div>
-        <div class="w-full md:w-1/2 text-white">
+        <div class="w-full md:w-1/2 text-white  text-center mt-8">
           <h3 class="text-2xl">Vinyl Record Haven</h3>
           <h1 class="desc">STREAM: Your Vinyl Record Destination</h1>
           <p class="text-gray-600 mb-10 md:mr-28">
@@ -96,36 +97,38 @@ function page() {
 
       {/* Main Section 5 */}
       <div className="mb-20 px-10">
-      <div className="text-white desc mb-5 text-center">Why Choose Us</div>
-      <div className="overflow-x-auto max-w-screen-lg mx-auto">
-        <div className="flex">
-          <div className="mr-4">
-            <div className="text-gray-600 text-5xl font-bold">1</div>
-            <h2 className="text-white text-2xl mb-5">Variety</h2>
-            <p className="text-gray-600">
-              STREAM offers a wide variety of audio and video content, including comedy, music, podcasts, and more.
-              With so many options to choose from, there's something for everyone.
-            </p>
-          </div>
-          <div className="mr-4">
-            <div className="text-gray-600 text-5xl font-bold">2</div>
-            <h2 className="text-white text-2xl mb-5">Quality</h2>
-            <p className="text-gray-600">
-              STREAM is committed to providing users with the highest quality audio and video experience possible.
-              Our content is streamed at high resolution and bitrates, ensuring that you enjoy every detail.
-            </p>
-          </div>
-          <div className="mr-4">
-            <div className="text-gray-600 text-5xl font-bold">3</div>
-            <h2 className="text-white text-2xl mb-5">Affordability</h2>
-            <p className="text-gray-600">
-              STREAM offers a variety of subscription plans to fit your budget.
-              Whether you're a casual listener or a hardcore streamer, we have a plan that's right for you.
-            </p>
-          </div>
+    <div className="text-white desc mb-5 text-center">Why Choose Us</div>
+    <div className="overflow-x-auto max-w-screen-lg mx-auto">
+        <div className="flex flex-no-wrap space-x-4 overflow-x-auto">
+            <div className="mr-4 ">
+                <div className="text-gray-600 text-5xl font-bold">1</div>
+                <h2 className="text-white text-2xl mb-5">Variety</h2>
+                <p className="text-gray-200 bg-gray-800 rounded-lg p-4">
+                    STREAM offers a wide variety of audio and video content, including comedy, music, podcasts, and more.
+                    With so many options to choose from, there's something for everyone.
+                </p>
+            </div>
+            <div className="mr-4 lg:block">
+                <div className="text-gray-600 text-5xl font-bold">2</div>
+                <h2 className="text-white text-2xl mb-5">Quality</h2>
+                <p className="text-gray-200 bg-gray-800 rounded-lg p-4">
+                    STREAM is committed to providing users with the highest quality audio and video experience possible.
+                    Our content is streamed at high resolution and bitrates, ensuring that you enjoy every detail.
+                </p>
+            </div>
+            <div className="mr-4 lg:block ">
+                <div className="text-gray-600 text-5xl font-bold">3</div>
+                <h2 className="text-white text-2xl mb-5">Affordability</h2>
+                <p className="text-gray-200 bg-gray-800 rounded-lg p-4">
+                    STREAM offers a variety of subscription plans to fit your budget.
+                    Whether you're a casual listener or a hardcore streamer, we have a plan that's right for you.
+                </p>
+            </div>
         </div>
-      </div>
     </div>
+</div>
+
+
       </div>
   )
 }
