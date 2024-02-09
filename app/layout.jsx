@@ -1,31 +1,31 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./globals.css"; // Your global styles
+import Link from "next/link";
+import { ToastContainer, toast } from "react-toastify";
+import Footer from "./Footer";
 
-import React from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './globals.css'; // Your global styles
-import Link from 'next/link';
 //import firebase from "./firebase"
 //import 'firebase/firestore'; // if you're using Firestore
-
-
 
 // Configure Font Awesome
 library.add(fab);
 
-
 const Navbar = () => (
-  <nav className="navbar p-5 bg-black flex items-center justify-between">
+  <nav className="flex items-center justify-between p-5 bg-black navbar">
     {/* Add your navbar content here */}
-    <img src="/assets/logo.jpeg" alt="Logo" 
-          className=""
-          width={80}
-          height={80}
-         />
-    <ul className="flex text-white gap-10 cursor-pointer">
+    <img
+      src="/assets/logo.jpeg"
+      alt="Logo"
+      className=""
+      width={80}
+      height={80}
+    />
+    <ul className="flex gap-10 text-white cursor-pointer">
       <li>
         <Link href="/">
-          <p className='cursor-pointer'>Home</p>
+          <p className="cursor-pointer">Home</p>
         </Link>
       </li>
       <li>
@@ -39,75 +39,21 @@ const Navbar = () => (
         </Link>
       </li>
     </ul>
-    <button className='black_btn'>Join Waitlist</button>
+    <button className="black_btn">Join Waitlist</button>
   </nav>
 );
 
-const Footer = () => (
-  <footer className="p-5 bg-black text-white ">
-    {/* Logo and Follow Us section */}
-    <div className="text-center">
-      <h1 className="text-3xl mb-3">Join The WaitList</h1>
-      <h5 className="text-gray-500 mb-10">
-        Be amoung our first user,join today!
-      </h5>
-    </div>
-    <div className="flex items-center justify-center gap-5 mb-28">
-      <div>
-        <input
-          type="email"
-          id="email"
-          placeholder=" Email"
-          //value={email}
-          className="p-2 border rounded bg-black text-white"
-        />
-      </div>
-      <button className="black_btn">join waitlist</button>
-    </div>
-
-    <div className="flex items-center justify-between">
-      {/* Logo on the left */}
-      <img src="/assets/logo.jpeg" alt="Logo" className="h-20" />
-
-      {/* Follow Us in the center */}
-      <div className="text-center ml-50">
-        Follow Us:
-        <ul className="flex gap-2 bg-white">
-          <li>
-            <a href="https://www.facebook.com" >
-              <FontAwesomeIcon icon={["fab", "facebook-square"]} />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com">
-              <FontAwesomeIcon icon={["fab", "instagram-square"]} />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <FontAwesomeIcon icon={["fab", "twitter-square"]} />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.discord.com">
-              <FontAwesomeIcon icon={["fab", "discord"]} />
-            </a>
-          </li>
-        </ul>
-      </div>
-      </div>
-      </footer>
-      )
-const RootLayout = ({ children }) => (
-  <html lang="en">
-    <body className="w-full">
-      <Navbar />
-      <main className="w-full">{children}</main>
-      <Footer />
-    </body>
-  </html>
-);
+const RootLayout = ({ children }) => {
+  return (
+    <html lang="en">
+      <body className="w-full">
+        <ToastContainer />
+        <Navbar />
+        <main className="w-full">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+};
 
 export default RootLayout;
-
-
