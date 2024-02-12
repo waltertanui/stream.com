@@ -3,10 +3,16 @@ import "./globals.css"; // Your global styles
 import React, { useState } from "react";
 import { db } from "./firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  getDocs,
+  serverTimestamp,
+} from "firebase/firestore";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 library.add(fab);
 
@@ -24,6 +30,17 @@ export default function footer() {
         email,
         createdAt: serverTimestamp(),
       });
+      // consolel.log all the datas from the waitlist
+      const querySnapshot = await getDocs(collection(db, "waitlist"));
+      console.log("Current waitlist:", querySnapshot);
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data().email}`);
+        // console.log(doc.data().email);
+      });
+      // I want to get every data in the wailist collection
+      const waitlist = querySnapshot.docs.map((doc) => doc.data());
+      console.log(waitlist);
+
       setEmail("");
       toast.success("You have been added to the waitlist");
     } catch (error) {
@@ -33,6 +50,11 @@ export default function footer() {
 
     setLoading(false);
   };
+
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
     <footer className="p-5 text-white bg-black ">
       {/* Logo and Follow Us section */}
@@ -49,7 +71,7 @@ export default function footer() {
             id="email"
             placeholder=" Email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleChange}
             className="p-2 text-white bg-black border rounded"
           />
         </div>
